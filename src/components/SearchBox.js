@@ -26,6 +26,7 @@ const SearchBox = ({ onSearch }) => {
     <div className="search">
     <label>Choose Location</label>
     <select name="locations" value={value} onChange={(e) => setValue(e.target.value)} >
+      <option></option>
       {list}
     </select>
       <button

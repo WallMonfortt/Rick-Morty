@@ -8,10 +8,14 @@ const ResidentContainer = ({data}) => {
     setList(data)
   }, [data])
 
-  const lista = list.map(value => <ResidentInfo key={value} url={value} />)
+  const lista = list.map(function (value, index) {
+    if (index < 10) {
+      return <ResidentInfo key={value} url={value} />
+    }
+  } )
 
   return (
-    <div>
+    <div className="back">
       {lista}
     </div>
   )

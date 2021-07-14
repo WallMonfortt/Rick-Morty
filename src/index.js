@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import './styles/App.css';
+import './styles/char.css';
 import Main from './components/Main';
 
 ReactDOM.render(
