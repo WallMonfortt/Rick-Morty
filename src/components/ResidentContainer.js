@@ -12,6 +12,7 @@ const ResidentContainer = ({data}) => {
     if (index < 10) {
       return <ResidentInfo key={value} url={value} />
     }
+    return null
   } )
 
   return (
